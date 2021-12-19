@@ -13,7 +13,7 @@ spec:
         app: frontend
     spec:
       containers:
-        - image: docker.io/talhaabdurrahman/session-frontend:latest
+        - image: docker.io/talhaabdurrahman/mern-frontend:latest
           name: frontend
           ports:
             - containerPort: 9000

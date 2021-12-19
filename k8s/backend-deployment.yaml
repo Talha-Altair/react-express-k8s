@@ -13,7 +13,7 @@ spec:
         app: backend
     spec:
       containers:
-        - image: docker.io/talhaabdurrahman/session-backend:latest
+        - image: docker.io/talhaabdurrahman/mern-backend:latest
           name: backend
           ports:
             - containerPort: 8000
