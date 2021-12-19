@@ -19,7 +19,7 @@ spec:
             - containerPort: 9000
           env:
             - name: REACT_APP_BACKEND_URL
-              value: http://backend.default.svc
+              value: http://52.142.32.154
             - name: PORT
               value: "9000"
           imagePullPolicy: Always
