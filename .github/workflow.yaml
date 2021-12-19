@@ -1,6 +1,6 @@
 name: Publish Docker image
 
-on: push to master
+on: [push]
 
 jobs:
   push_to_registry:
