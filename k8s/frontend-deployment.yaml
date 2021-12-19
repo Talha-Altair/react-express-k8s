@@ -18,8 +18,9 @@ spec:
           ports:
             - containerPort: 9000
           env:
-            - name: BACKEND_URL
+            - name: REACT_APP_BACKEND_URL
               value: http://backend
             - name: PORT
               value: "9000"
+          imagePullPolicy: Always
       hostname: frontend-service

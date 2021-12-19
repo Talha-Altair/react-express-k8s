@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Data from './Data';
 import './App.css';
 
-const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:8000';
+<pre>{process.env.REACT_APP_BACKEND_URL}</pre>
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000';
 
 function App() {
 
