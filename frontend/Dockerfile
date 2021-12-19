@@ -2,12 +2,14 @@ FROM node:16-buster-slim
 
 WORKDIR /app
 
+ENV PATH /app/node_modules/.bin:$PATH
+
 COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY . ./
 
-EXPOSE 8000
+EXPOSE 9000
 
-CMD [ "npm", "start" ]
+CMD ["npm", "start"]

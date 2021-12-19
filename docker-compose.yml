@@ -7,7 +7,24 @@ services:
     build: ./backend
 
     ports:
-      - 3000:3000
+      - 8000:8000
+
+    environment:
+      - PORT=8000
 
     volumes:
       - ./backend:/app
+
+  frontend:
+
+    build: ./frontend
+
+    ports:
+      - 9000:9000
+
+    environment:
+      - BACKEND_URL='http://backend:8000'
+      - PORT=9000
+
+    volumes:
+      - ./frontend:/app

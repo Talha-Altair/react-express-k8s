@@ -3,6 +3,9 @@ const app = express();
 const port = process.env.PORT || 8000;
 const randomizer = require('./randomizer');
 const faker = require('faker');
+const cors = require('cors');
+
+app.use(cors());
 
 app.get('/', (req, res) => {
 
