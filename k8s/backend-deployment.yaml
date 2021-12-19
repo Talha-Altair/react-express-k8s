@@ -17,4 +17,7 @@ spec:
           name: backend
           ports:
             - containerPort: 8000
+          env:
+            - name: PORT
+              value: 8000
       hostname: backend-service
