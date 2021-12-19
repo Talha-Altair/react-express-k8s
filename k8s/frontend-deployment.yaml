@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - image: docker.io/talhaabdurrahman/session-frontend:latest
+          name: frontend
+          ports:
+            - containerPort: 9000
+          env:
+            - name: BACKEND_URL
+              value: http://backend
+      hostname: frontend-service
